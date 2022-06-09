@@ -1,0 +1,28 @@
+<div class="wrapper">
+    <app-navbar-brayan></app-navbar-brayan>
+    <app-sidebar></app-sidebar>
+    <div class="content-wrapper">
+        <div class="row">
+
+        <div *ngFor="let user of users" class="col-sm-6 col-md-3 m-4">
+            <div class="info-box">
+              <span class="info-box-icon bg-info elevation-1"><i class="fa fa-user"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">{{user.name}}</span>
+                <span class="info-box-number">
+                    trabajo: {{user.jobTitle}}
+                </span>
+                <span class="info-box-number">
+                   edad: {{user.age}}
+                   
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
+                      
+        </div>
+    </div>
+</div>
